@@ -1,0 +1,40 @@
+{
+  "name": "hero_ai_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabioknd/Hero_AI_API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fabioknd/Hero_AI_API/issues"
+  },
+  "homepage": "https://github.com/fabioknd/Hero_AI_API#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "cors": "^2.8.6",
+    "dotenv": "latest",
+    "express": "^5.2.1",
+    "fastify": "latest",
+    "graphql-request": "latest",
+    "pdfjs-dist": "^6.0.227",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}
