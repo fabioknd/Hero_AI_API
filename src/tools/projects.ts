@@ -10,7 +10,7 @@ import {
 export function registerProjectTools(server: McpServer) {
     server.tool(
         "hero_get_active_projects",
-        "Liest aktive HERO-Projekte aus. Abgeschlossene Projekte mit status_code 2000 werden bereits in der HERO-Query ausgeschlossen.",
+        "Liest aktive HERO-Projekte aus. Abgeschlossene Projekte mit status_code 2000 werden bereits in der HERO-Query ausgeschlossen. Das Feld 'volume' sagt, wie viel Rohertrag bei dem Projekt hängen bleiben - wenn das Feld ungleich 0 ist, ist das für das controlling wichtig.",
         {
             limit: z.number().min(1).max(100).default(20),
             offset: z.number().min(0).default(0),
