@@ -12,6 +12,21 @@ export const GET_PROJECT_MATCHES = `
       custom_fields_searchable {
         values
       }
+      customer_documents {
+        document_type {
+            name
+        }
+        value
+        vat
+        metadata {
+            invoice_style
+
+        }
+        customer_document_booking {
+            is_open
+            balance
+        }
+      }
       
       measure {
         short
