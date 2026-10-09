@@ -9,7 +9,9 @@ export const GET_PROJECT_MATCHES = `
       id
       project_nr
       name
-      volume
+      custom_fields_searchable {
+        values
+      }
       
       measure {
         short
@@ -50,7 +52,9 @@ export const GET_PROJECT_DETAILS = `
       id
       name
       project_nr
-      volume
+      custom_fields_searchable {
+        values
+      }
 
       address {
         full_address
